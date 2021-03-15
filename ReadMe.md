@@ -19,7 +19,7 @@ This project is a school 42 project coded with [projectKB](https://github.com/Pr
 The project is a lite Neural Network library with data processing, modular initialization and optimization options.
 Everything is coded with `numpy` with matrixes calculus and accelerated by `numba`.
 
-With `seed 101`, loss is under `0.07` and accuracy is near `99%` with the given dataset in **data**.
+With `seed 10142`, loss is under `0.07` and accuracy is near `99%` with the given dataset in **data**.
 
 ## Technologies
 ___
@@ -82,7 +82,7 @@ See all arguments in usage by specifying `-h` while executing the code
 
 ### Optimization
 
-- Vanilla
+- Vanilla (stochastic gradient descent)
 - Momentum
 - RMSprop
 - Adam
@@ -90,4 +90,16 @@ See all arguments in usage by specifying `-h` while executing the code
 ## Examples
 ___
 
+The (dataset provided)[https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)] `UCI Breast Cancer Wisconsin (Diagnostic) Data Set (WDBC)` is a CSV file describe characteristics of cells nuclei from breast mass.
+The target feature records the prognosis (benign (1) or malignant (2)).
+
 See in **srcs** (`perceptron_train.py` and `perceptron_predict.py`)
+
+Train with test-train dataset, plot option, stochastic grandient descent optimizer and a seed:
+```
+python3.8 srcs/perceptron_train.py -d data/datasets/data_training_seed.csv -dt data/datasets/data_training_seed.csv -plt -s 10142 -sgd
+```
+Predict with test-train dataset and a seed:
+```
+python3.8 srcs/perceptron_predict.py -d data/datasets/data_training_seed.csv -dt data/datasets/data_training_seed.csv -s 10142
+```
