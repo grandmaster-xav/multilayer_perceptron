@@ -90,7 +90,7 @@ See all arguments in usage by specifying `-h` while executing the code
 ## Examples
 ___
 
-The (dataset provided)[https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)] `UCI Breast Cancer Wisconsin (Diagnostic) Data Set (WDBC)` is a CSV file describe characteristics of cells nuclei from breast mass.
+The [dataset provided](https://archive.ics.uci.edu/ml/datasets/Breast+Cancer+Wisconsin+(Diagnostic)) `UCI Breast Cancer Wisconsin (Diagnostic) Data Set (WDBC)` is a CSV file describe characteristics of cells nuclei from breast mass.
 The target feature records the prognosis (benign (1) or malignant (2)).
 
 See in **srcs** (`perceptron_train.py` and `perceptron_predict.py`)
